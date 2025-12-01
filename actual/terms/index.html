@@ -6,8 +6,8 @@
 <link rel="shortcut icon" href="../fileadmin/figurenwerk/favicon/favicon.ico" type="image/x-icon">
 <title>Terms & Conditions | 3dfromphoto</title>
 <meta name="ROBOTS" content="index,follow">
-<meta name="KEYWORDS" content="terms, conditions, legal, 3dfromphoto, digital services">
-<meta name="description" content="Terms and Conditions for 3dfromphoto digital content generation services.">
+<meta name="KEYWORDS" content="terms, conditions, GDPR, privacy, 3dfromphoto, digital services">
+<meta name="description" content="Terms and Conditions for 3dfromphoto digital content generation services. GDPR compliant.">
 <meta name="robots" content="index,follow">
 
 <link rel="stylesheet" type="text/css" href="../typo3temp/compressor/merged-afbb56ca2faebf4ae9af83623365ecb1-882f9ac00fdf489abc6b68d47c90a3a2.css.gzip.css" media="all">
@@ -23,38 +23,37 @@
 <link rel="apple-touch-icon" type="image/png" href="../fileadmin/figurenwerk/favicon/apple-touch-icon.png"/>
 
 <style>
-  .terms-content {
-    max-width: 900px;
+  .terms-page {
+    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-    text-align: center;
   }
-  .terms-content h1 {
+  .terms-page h1 {
     color: #2980b9;
-    margin-bottom: 30px;
-    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
   }
-  .terms-content p {
-    line-height: 1.8;
-    color: #555;
+  
+  /* Download Section */
+  .download-card {
+    background: linear-gradient(135deg, #2980b9 0%, #1a5276 100%);
+    border-radius: 20px;
+    padding: 50px 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(41, 128, 185, 0.3);
+  }
+  .download-card h2 {
+    color: #fff;
     margin-bottom: 15px;
-    font-size: 1.1em;
+    font-size: 1.6em;
   }
-  .download-section {
-    background: linear-gradient(135deg, #2980b9, #1a5276);
-    border-radius: 15px;
-    padding: 50px 30px;
-    margin: 40px 0;
-    color: #fff;
-  }
-  .download-section h2 {
-    color: #fff;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-  }
-  .download-section p {
+  .download-card p {
     color: rgba(255,255,255,0.9);
     margin-bottom: 30px;
+    font-size: 1.05em;
+    line-height: 1.6;
   }
   .download-btn {
     display: inline-flex;
@@ -62,7 +61,7 @@
     gap: 12px;
     background: #fff;
     color: #2980b9;
-    padding: 18px 40px;
+    padding: 18px 50px;
     border-radius: 50px;
     text-decoration: none;
     font-size: 1.2em;
@@ -73,60 +72,100 @@
   .download-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-    background: #f8f9fa;
   }
   .download-btn svg {
     width: 24px;
     height: 24px;
-    fill: #2980b9;
+    fill: currentColor;
   }
-  .company-info {
+  
+  /* GDPR Section */
+  .gdpr-section {
     background: #f8f9fa;
     border-radius: 15px;
-    padding: 40px 30px;
-    margin: 40px 0;
-    text-align: left;
+    padding: 35px;
+    margin-bottom: 30px;
   }
-  .company-info h2 {
+  .gdpr-section h2 {
     color: #333;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #2980b9;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #2980b9;
+    font-size: 1.4em;
   }
-  .company-info p {
-    margin-bottom: 10px;
+  .gdpr-section h3 {
+    color: #2980b9;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
   }
-  .company-info a {
+  .gdpr-section p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  .gdpr-section ul {
+    color: #555;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  .gdpr-section li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  .gdpr-section a {
     color: #2980b9;
     text-decoration: none;
   }
-  .company-info a:hover {
+  .gdpr-section a:hover {
     text-decoration: underline;
   }
-  .disclaimer-box {
-    background: #fff3cd;
-    border: 2px solid #ffc107;
-    border-radius: 10px;
+  
+  /* Company Info */
+  .company-card {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .company-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+  }
+  .company-card .info-row {
+    display: flex;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .company-card .label {
+    font-weight: 600;
+    color: #666;
+    min-width: 140px;
+  }
+  .company-card .value {
+    color: #333;
+  }
+  .company-card a {
+    color: #2980b9;
+  }
+  
+  /* Contact */
+  .contact-box {
+    background: #2980b9;
+    color: #fff;
+    border-radius: 12px;
     padding: 25px;
-    margin: 30px 0;
-    text-align: left;
+    text-align: center;
   }
-  .disclaimer-box h3 {
-    color: #856404;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  .disclaimer-box p {
-    color: #856404;
+  .contact-box p {
     margin-bottom: 10px;
-    font-size: 0.95em;
   }
-  .disclaimer-box ul {
-    color: #856404;
-    margin-left: 20px;
-  }
-  .disclaimer-box li {
-    margin-bottom: 8px;
+  .contact-box a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
   }
 </style>
 </head>
@@ -144,62 +183,93 @@
   </div>
   
   <div class="kasten">
-    <div class="terms-content">
+    <div class="terms-page">
       
-      <h1>📄 Terms & Conditions</h1>
+      <h1>📋 Terms & Conditions</h1>
       
-      <p>Please review our complete Terms and Conditions, Privacy Policy, and Public Offer Agreement before using our services.</p>
-      
-      <!-- DOWNLOAD SECTION -->
-      <div class="download-section">
-        <h2>Download Legal Documents</h2>
-        <p>Our complete terms, privacy policy, and service agreement are available in PDF format for your convenience.</p>
+      <!-- DOWNLOAD CARD -->
+      <div class="download-card">
+        <h2>📄 Download Complete Terms</h2>
+        <p>Our full Terms and Conditions, Privacy Policy, and Public Offer Agreement are available as a PDF document.</p>
         <a href="../fileadmin/user_upload/3dfromphoto_Terms_and_Conditions.pdf" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
           Download PDF
         </a>
       </div>
       
-      <!-- DISCLAIMER BOX -->
-      <div class="disclaimer-box">
-        <h3>⚠️ Important Notice</h3>
-        <p><strong>By using this website, you acknowledge and agree that:</strong></p>
-        <ul>
-          <li>This Website is a demonstration platform for digital content generation services using AI technology.</li>
-          <li>We do NOT sell, manufacture, ship, or deliver any physical products.</li>
-          <li>All visual representations of "products" are digital only — for demonstration purposes.</li>
-          <li>All payments are real transactions for digital services and digital content exclusively.</li>
-          <li>Personnel appearing on this Website are actors and/or digital assistants.</li>
-          <li>All services result exclusively in digital files (images, renders, videos) delivered electronically.</li>
-        </ul>
-      </div>
-      
       <!-- COMPANY INFO -->
-      <div class="company-info">
-        <h2>Service Provider Information</h2>
-        
-        <p><strong>Company Name:</strong> 3dfromphoto</p>
-        <p><strong>Legal Entity:</strong> Private Entrepreneur (ФОП) Імя Прізвище</p>
-        <p><strong>Country:</strong> Ukraine</p>
-        <p><strong>Email:</strong> <a href="mailto:alfhkdku@bolivianomail.com">alfhkdku@bolivianomail.com</a></p>
-        
-        <br>
-        
-        <h3>Supervisory Authority (for Ukrainian users)</h3>
-        <p>Уповноважений Верховної Ради України з прав людини<br>
-        (Ukrainian Parliament Commissioner for Human Rights)<br>
-        вул. Інститутська, 21/8<br>
-        01008, Київ, Україна<br>
-        Website: <a href="https://www.ombudsman.gov.ua" target="_blank">www.ombudsman.gov.ua</a></p>
-        
-        <br>
-        
-        <p><strong>📧 Contact:</strong> For questions regarding terms, data deletion, or service inquiries, please email: <a href="mailto:alfhkdku@bolivianomail.com">alfhkdku@bolivianomail.com</a></p>
+      <div class="company-card">
+        <h2>🏢 Data Controller Information</h2>
+        <div class="info-row">
+          <span class="label">Company:</span>
+          <span class="value">3dfromphoto</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Legal Entity:</span>
+          <span class="value">Private Entrepreneur (ФОП) Імя Прізвище</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Country:</span>
+          <span class="value">Ukraine</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Email:</span>
+          <span class="value"><a href="mailto:alfhkdku@bolivianomail.com">alfhkdku@bolivianomail.com</a></span>
+        </div>
       </div>
       
-      <p style="margin-top: 30px; color: #888; font-size: 0.9em;">
-        For detailed privacy information, please visit our <a href="../impressum/datenschutzerklaerung/index.html" style="color: #2980b9;">Privacy Policy</a> page.
-      </p>
+      <!-- GDPR INFORMATION -->
+      <div class="gdpr-section">
+        <h2>🔒 Your Rights Under GDPR</h2>
+        <p>In accordance with the General Data Protection Regulation (GDPR), you have the following rights regarding your personal data:</p>
+        
+        <h3>Right of Access (Art. 15 GDPR)</h3>
+        <p>You have the right to obtain confirmation as to whether personal data concerning you is being processed and access to that data.</p>
+        
+        <h3>Right to Rectification (Art. 16 GDPR)</h3>
+        <p>You have the right to obtain rectification of inaccurate personal data and to have incomplete data completed.</p>
+        
+        <h3>Right to Erasure (Art. 17 GDPR)</h3>
+        <p>You have the right to request the deletion of your personal data ("right to be forgotten") under certain circumstances.</p>
+        
+        <h3>Right to Restriction (Art. 18 GDPR)</h3>
+        <p>You have the right to request restriction of processing of your personal data in specific situations.</p>
+        
+        <h3>Right to Data Portability (Art. 20 GDPR)</h3>
+        <p>You have the right to receive your personal data in a structured, commonly used format and transmit it to another controller.</p>
+        
+        <h3>Right to Object (Art. 21 GDPR)</h3>
+        <p>You have the right to object to processing of your personal data for direct marketing purposes at any time.</p>
+        
+        <h3>Right to Withdraw Consent (Art. 7 GDPR)</h3>
+        <p>Where processing is based on consent, you have the right to withdraw that consent at any time.</p>
+        
+        <h3>Right to Lodge a Complaint</h3>
+        <p>You have the right to lodge a complaint with a supervisory authority if you believe your data protection rights have been violated.</p>
+      </div>
+      
+      <!-- ADDITIONAL RIGHTS -->
+      <div class="gdpr-section">
+        <h2>🌍 Additional Regional Rights</h2>
+        
+        <h3>For Users in Turkey (KVKK)</h3>
+        <p>Users from Türkiye have additional rights under the Personal Data Protection Law (KVKK), including the right to request information, correction, deletion, and to file complaints with KVKK authorities.</p>
+        
+        <h3>For Users in USA (CCPA/CPRA)</h3>
+        <p>California residents have rights under CCPA/CPRA including: right to know, right to delete, right to opt-out of sale of personal information, and right to non-discrimination.</p>
+        
+        <h3>For Users in Ukraine</h3>
+        <p>Ukrainian users can contact the Ukrainian Parliament Commissioner for Human Rights:<br>
+        вул. Інститутська, 21/8, 01008 Київ<br>
+        <a href="https://www.ombudsman.gov.ua" target="_blank">www.ombudsman.gov.ua</a></p>
+      </div>
+      
+      <!-- CONTACT BOX -->
+      <div class="contact-box">
+        <p><strong>📧 To exercise your rights or for any inquiries:</strong></p>
+        <p><a href="mailto:alfhkdku@bolivianomail.com">alfhkdku@bolivianomail.com</a></p>
+        <p style="font-size: 0.9em; margin-top: 15px; opacity: 0.9;">We will respond to your request within 30 days.</p>
+      </div>
       
     </div>
   </div>
