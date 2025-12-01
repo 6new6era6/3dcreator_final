@@ -23,20 +23,30 @@
 <link rel="apple-touch-icon" type="image/png" href="../../fileadmin/figurenwerk/favicon/apple-touch-icon.png"/>
 
 <style>
+  /* Hide background image overlay */
+  #landschaft {
+    display: none !important;
+  }
+  
   /* Override global styles */
+  body {
+    background: #f5f5f5 !important;
+  }
+  
   .kasten {
     background: #fff !important;
     position: relative;
-    z-index: 10;
+    z-index: 100;
+    min-height: auto !important;
   }
   
   .privacy-page {
     max-width: 850px;
     margin: 0 auto;
     padding: 40px 20px 80px;
-    background: #fff;
+    background: #fff !important;
     position: relative;
-    z-index: 10;
+    z-index: 100;
   }
   .privacy-page h1 {
     color: #1a5276 !important;
